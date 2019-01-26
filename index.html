@@ -6,6 +6,10 @@
     <title>Politico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       type="text/css"
       media="screen"
@@ -14,17 +18,25 @@
   </head>
   <body>
     <div class="container">
-      <nav>
-        <input type="checkbox" id="nav" class="hidden" />
-        <label for="nav" class="nav-btn"> <i></i> <i></i> <i></i> </label>
-        <div class="logo"><a href="#">Politico</a></div>
-        <div class="nav-wrapper">
+      <header>
+        <input type="checkbox" id="header" class="hidden" />
+        <label for="header" class="header-btn"> <i></i> <i></i> <i></i> </label>
+        <div class="logo"><a href="index.html">Politico</a></div>
+        <div class="header-wrapper">
           <ul>
-            <li><a href="#"></a>LOGIN</li>
-            <li><a href="#"></a>BLOG</li>
-            <li><a href="#"></a>ABOUT US</li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">about us</a></li>
           </ul>
         </div>
+      </header>
+      <nav class="header_info">
+        <p id="top_word">
+          <span>politico</span> your favourite voting platform
+        </p>
+        <p id="top_word_2">Take Elections to the Next Level</p>
+        <p><span id="start">Get started</span>today with us</p>
+        <a href="signup.html"><button>Signup here</button></a>
       </nav>
     </div>
   </body>
