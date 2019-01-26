@@ -85,14 +85,24 @@ header ul li a {
     .card {
       flex: 0 1 calc(50% - 1em);
     }
+    .whats_politico {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding-top: 30px;
+    }
   }
 
   @media screen and (max-width: 540px) {
     .cards {
       flex-direction: column;
-      width: 300px;
       padding-bottom: 6px;
       margin: auto;
+    }
+    .cards p {
+      width: auto;
+      height: auto;
+      padding: 0 55px 0 55px;
     }
   }
 
@@ -243,15 +253,16 @@ header ul li a {
 }
 
 .why_politico {
-  background-color: #210124;
+  background-color: #b3dec1;
   width: 100%;
   height: auto;
   margin-top: 100px;
-  color: #767676;
+  color: #181718;
   text-align: center;
 }
 .why_politico h1 {
   font-size: 180%;
+  padding-top: 25px;
 }
 .why_politico h1 span {
   color: #750d37;
@@ -261,8 +272,13 @@ header ul li a {
 .cards {
   display: flex;
   justify-content: space-between;
+  margin-right: 5px;
+  margin-left: 5px;
 }
-
+.card {
+  margin: 5px;
+  padding: 10px;
+}
 .cards h5 {
   font-size: 14px;
   margin-top: 0;
@@ -270,6 +286,31 @@ header ul li a {
   line-height: 1.3em;
   font-style: normal;
   margin-bottom: 15px;
+}
+
+.whats_politico img {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+}
+.whats_politico {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.whats_politico article {
+  width: auto;
+  height: auto;
+  margin: 0 30px 0 30px;
+  font-size: 0.8em;
+}
+
+.footer {
+  font-size: 1em;
+  font-weight: 600;
+  float: right;
+  margin-top: 90px;
 }
 
 #header:checked + .header-btn {
