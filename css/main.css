@@ -19,7 +19,7 @@ body {
   background-color: #fefffe;
   background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e5fcf5' fill-opacity='0.81' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 header {
@@ -34,7 +34,7 @@ header {
 }
 
 .logo a {
-  color: #000;
+  color: #323533;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
@@ -73,6 +73,27 @@ header ul li a {
 @media screen and (max-width: 864px) {
   .logo {
     padding: 0;
+  }
+
+  @media screen and (max-width: 860px) {
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      flex: 0 1 calc(50% - 1em);
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .cards {
+      flex-direction: column;
+      width: 300px;
+      padding-bottom: 6px;
+      margin: auto;
+    }
   }
 
   .header-wrapper {
@@ -125,7 +146,7 @@ header ul li a {
   .header-wrapper ul li a {
     padding: 10px 24px;
     opacity: 0;
-    color: #000;
+    color: #323533;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1.2px;
@@ -169,7 +190,7 @@ header ul li a {
 }
 
 .header_info {
-  margin-top: 70px;
+  margin-top: -18px;
   padding-top: 15px;
   padding-bottom: 30px;
   padding-left: 10px;
@@ -178,10 +199,12 @@ header ul li a {
   width: 100%;
   text-align: center;
   color: #323533;
+  height: auto;
 }
 
 .header_info h1 {
   font-size: 50px;
+  margin-top: 80px;
 }
 .header_info h1 span {
   text-transform: uppercase;
@@ -217,6 +240,36 @@ header ul li a {
   background-color: #210124;
   color: #fff;
   text-transform: uppercase;
+}
+
+.why_politico {
+  background-color: #210124;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  color: #767676;
+  text-align: center;
+}
+.why_politico h1 {
+  font-size: 180%;
+}
+.why_politico h1 span {
+  color: #750d37;
+  font-size: 130%;
+  text-transform: uppercase;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards h5 {
+  font-size: 14px;
+  margin-top: 0;
+  font-weight: 600;
+  line-height: 1.3em;
+  font-style: normal;
+  margin-bottom: 15px;
 }
 
 #header:checked + .header-btn {
