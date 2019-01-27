@@ -1,0 +1,130 @@
+@import "/css/hamburger-menu.css";
+
+.signup_form {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 3em;
+  background-color: #b3dec1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.signup_text {
+  font-weight: lighter;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.form input {
+  display: block;
+  width: 350px;
+  height: 50px;
+  outline: none;
+  font-weight: lighter;
+  font-size: 14px;
+  padding-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.form button {
+  width: 350px;
+  height: 50px;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #ffffff;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: -1px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.form label span {
+  margin-left: 5px;
+}
+#password {
+  float: inline-end;
+}
+#password a:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+#google-signin {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #d1cbcb;
+  padding: 10px;
+  border-radius: 5px;
+}
+#google-signin a:hover {
+  color: rgb(41, 36, 36);
+  font-weight: bolder;
+}
+#google-signin img {
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+#google-signin a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+footer {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #b3dec1;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 520px) {
+  .signup_form {
+    border-radius: 5px;
+    padding: 0em;
+    background-color: #b3dec1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .signup_text {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .signup_text p {
+    margin-top: -9px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 130%;
+  }
+  .signup_text h3 {
+    text-transform: uppercase;
+  }
+  .form label span {
+    margin-left: 31px;
+    font-size: small;
+    padding-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .form input {
+    width: 300px;
+    margin-left: 12px;
+  }
+  .form button {
+    width: 13em;
+    margin-left: 30px;
+  }
+}
