@@ -1,0 +1,51 @@
+@import "/css/hamburger-menu.css";
+
+.form-wrap {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 3em;
+  margin-top: 12rem;
+  background-color: #b3dec1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 18px 15px 6px 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+input[type="button"] {
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  color: #3e3d3d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input[type="button"]:hover {
+  background: #b3dec1;
+  transition: 0.6s;
+}
+
+::placeholder {
+  color: #fff;
+}
