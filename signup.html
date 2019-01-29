@@ -37,10 +37,13 @@
           </ul>
         </div>
       </header>
-      <main>
-        <div class="form-wrap">
-          <form>
-            <h1>Sign Up</h1>
+      <main class="signup_form">
+        <div class="signup_text">
+          <h3>Sign Up</h3>
+          <p>Resgister an account with us</p>
+        </div>
+        <form class="form">
+          <label for="form">
             <input type="text" placeholder="First Name" />
             <input type="text" placeholder="Last Name" />
             <input type="text" placeholder="Other Name" />
@@ -49,10 +52,13 @@
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <input type="password" placeholder="Confirm Password" />
-            <input type="file" name="picture" id="profile-pic" />
+            <p>Upload your pics</p>
+            <span class="input-wrapper"
+              ><input type="file" name="picture" id="profile-pic"
+            /></span>
             <a href="activity.html"><input type="button" value="Sign Up"/></a>
-          </form>
-        </div>
+          </label>
+        </form>
       </main>
     </div>
   </body>
