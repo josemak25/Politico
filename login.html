@@ -19,7 +19,7 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="/css/login.css"
+      href="css/login.css"
     />
   </head>
   <body>
@@ -50,9 +50,7 @@
             <a href="activity.html"><input type="button" value="Sign In"/></a>
           </label>
         </form>
-        <div id="password">
-          <a href="passwordReset.html">Forget password?</a>
-        </div>
+        <div id="password"><a href="#" id="password">Forget password?</a></div>
       </main>
       <div id="google-signin">
         <img
@@ -60,6 +58,20 @@
           alt=""
         /><a href="#">Sign in with Google</a>
       </div>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Politico</h1>
+          <h3>
+            Enter the email address you used to sign up for your account to
+            receive a password reset email
+          </h3>
+          <input type="email" placeholder="Email" />
+          <input type="button" value="Reset Password" />
+        </div>
+      </div>
+      <script src="resetPassword.js"></script>
       <footer>
         <div>
           <span
