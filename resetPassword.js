@@ -23,3 +23,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+window.onload = event => {
+  modal.style.display = "none";
+};
