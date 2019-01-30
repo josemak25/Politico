@@ -1,4 +1,4 @@
-@import "/css/hamburger-menu.css";
+@import "hamburger-menu.css";
 
 header {
   position: fixed;
@@ -127,9 +127,8 @@ header {
 }
 
 .whats_politico img {
-  width: 100%;
+  width: 50%;
   height: auto;
-  padding-top: 30px;
 }
 .whats_politico {
   display: flex;
@@ -147,6 +146,6 @@ header {
 .footer {
   font-size: 1em;
   font-weight: 600;
-  float: right;
+  text-align: center;
   margin-top: 90px;
 }
